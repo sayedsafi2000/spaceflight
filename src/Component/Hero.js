@@ -7,7 +7,7 @@ const Hero = () => {
                 <h2>Spaceflight details</h2>
                 <p className='secondery-heading'>Find out the elaborate features of all the past big spaceflights.</p>
             </div>
-            <header className='d-md-flex d-block d-xllgflex justify-content-between justify-center'>
+            <header className='d-md-flex d-block d-lg-flex justify-content-between justify-center'>
                 <div class="input-group mb-3 d-flex align-items-center justify-content-center search-bar">
                     <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2" />
                     <div className="bg-primary p-2">

@@ -6,13 +6,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { router } from './Router/Router';
+import DataCOntext from './Context/DataCOntext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} >
-      <App />
-    </RouterProvider>
-
+    <DataCOntext>
+      <RouterProvider router={router} >
+        <App />
+      </RouterProvider>
+    </DataCOntext>
   </React.StrictMode>
 );
 
