@@ -1,0 +1,55 @@
+$h2-heading: #212529;
+$secondery: #495057;
+$primary_3: #878f99;
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+/* use the variables */
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.heading{
+    margin-top: 120px;
+    margin-bottom: 64px;
+}
+h2 {
+    color: $h2-heading;
+    font-weight: 500;
+    font-size: 40px;
+    // text-align: center;
+    font-family: 'Barlow', sans-serif;
+    line-height: 48px;
+}
+
+.secondery-heading {
+    color: $secondery;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Barlow', sans-serif;
+    // text-align: center;
+}
+.search-bar{
+width: 382px;
+}
+.filter-data{
+    width: 230px;
+}
+.right-side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+img{
+    width: 124px;
+    height: 124px;
+}
+@media screen and (max-width:667px) {
+    .filter-data{
+        width: 100%;
+    }
+    .search-bar{
+        width: 100%;
+        }
+}
