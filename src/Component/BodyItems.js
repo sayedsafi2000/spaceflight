@@ -3,9 +3,9 @@ import { FlightData } from '../Context/DataCOntext';
 
 const BodyItems = () => {
     const value = useContext(FlightData);
-    console.log(value)
+    // console.log(value)
     const { loading,menu } = value;
-    console.log(loading)
+    // console.log(loading)
     if(loading !== false){
         return(
             <div>

@@ -4,15 +4,17 @@ $primary_3: #878f99;
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 /* use the variables */
-body{
+body {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.heading{
+
+.heading {
     margin-top: 120px;
     margin-bottom: 64px;
 }
+
 h2 {
     color: $h2-heading;
     font-weight: 500;
@@ -30,27 +32,51 @@ h2 {
     font-family: 'Barlow', sans-serif;
     // text-align: center;
 }
-.search-bar{
-width: 382px;
+
+.search-bar {
+    width: 382px;
 }
-.filter-data{
+
+.filter-data {
     width: 230px;
 }
-.right-side-bar{
+
+.right-side-bar {
     display: flex;
     flex-direction: column;
     justify-content: right;
 }
-img{
+
+img {
     width: 124px;
     height: 124px;
     margin: 0 auto;
 }
+
+.pagination_buttons {
+    height: 31px;
+    margin: 0 auto;
+}
+.pagination_buttons button{
+    color:#0D6EFD;
+    font-weight: bold;
+    padding: 5px 9px 5px 9px;
+    border-radius: 0px;
+    border-color: #DEE2E6;
+    margin-top: 48px;
+}
 @media screen and (max-width:667px) {
-    .filter-data{
+    .filter-data {
         width: 100%;
     }
-    .search-bar{
+
+    .search-bar {
         width: 100%;
-        }
+    }
+
+    .pagination_buttons {
+        width: 70%;
+        margin: 0 auto;
+        height: 31px;
+    }
 }
