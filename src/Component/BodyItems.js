@@ -4,16 +4,22 @@ import { FlightData } from '../Context/DataCOntext';
 const BodyItems = () => {
     const value = useContext(FlightData);
     console.log(value)
-    const { loading } = value;
+    const { loading,menu } = value;
     console.log(loading)
-
+    if(loading !== false){
+        return(
+            <div>
+                Loading....
+            </div>
+        )
+    }
     return (
         <div className='row'>
             {
-                value.map(item =>
+                menu.map(item =>
                     <>
                         <div class="col-md-6 col-lg-4">
-                            <div className="card mb-4">
+                            <div className="card mb-4 pt-4">
                                 <img className='' src={item?.links.mission_patch} alt="..." />
                                 <div class="card-body">
                                     <p>{item?.launch_date_local}</p>
