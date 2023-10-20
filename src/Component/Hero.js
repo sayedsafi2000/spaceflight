@@ -2,6 +2,7 @@ import React from 'react';
 import "../Styles/main.scss"
 import SearchBox from './SearchBox';
 import SortingData from './SortingData';
+import PaginationComponent from './PaginationComponent';
 const Hero = () => {
     return (
         <div className='container'>
@@ -26,6 +27,7 @@ const Hero = () => {
                     </div>
                 </div>
             </header>
+            <PaginationComponent></PaginationComponent>
             <section>
 
             </section>

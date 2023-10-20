@@ -5,7 +5,7 @@ const itemsPerPage = 9; // Number of items to display per page
 
 const PaginationComponent = () => {
   const PaginationData = useContext(FlightData);
-  const {menu} = PaginationData.
+  const { menu } = PaginationData;
   const [currentPage, setCurrentPage] = useState(1);
 
   // Calculate the index range for the current page
@@ -14,6 +14,7 @@ const PaginationComponent = () => {
   const currentData = menu.slice(startIndex, endIndex);
 
   const totalPages = Math.ceil(menu.length / itemsPerPage);
+  console.log(currentData)
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -22,11 +23,23 @@ const PaginationComponent = () => {
   return (
     <div>
       {/* Display current page menu */}
-      <ul>
-        {currentData.map((item, index) => (
-          <li key={index}>{item.name}</li>
-        )}
-      </ul>
+      <div className='row'>
+        {
+          currentData.map(item =>
+            <div class="col-md-6 col-lg-4">
+              <div className="card mb-4 pt-4">
+                <img className='' src={item?.links.mission_patch} alt="..." />
+                <div class="card-body">
+                  <p>{item?.launch_date_local}</p>
+                  <h3>{item?.mission_name}</h3>
+                  <p class="card-text">{item?.rocket.rocket_name}</p>
+                  <p>{item?.launch_success}</p>
+                </div>
+              </div>
+            </div>
+          )
+        }
+      </div>
 
       {/* Pagination controls */}
       <div>
@@ -39,9 +52,7 @@ const PaginationComponent = () => {
         <span>Page {currentPage} of {totalPages}</span>
         <button
           onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-        >
-          Next
+          disabled={currentPage === totalPages}> Next
         </button>
       </div>
     </div>
