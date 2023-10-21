@@ -1,8 +1,8 @@
 import React from 'react';
 import "../Styles/main.scss"
-import SearchBox from './SearchBox';
 import SortingData from './SortingData';
 import PaginationComponent from './PaginationComponent';
+import SearchComponent from './SearchComponent';
 const Hero = () => {
     return (
         <div className='container'>
@@ -11,7 +11,7 @@ const Hero = () => {
                 <p className='secondery-heading'>Find out the elaborate features of all the past big spaceflights.</p>
             </div>
             <header className='d-md-flex d-block d-lg-flex justify-content-between justify-center'>
-                <SearchBox></SearchBox>
+                <SearchComponent></SearchComponent>
                 <div className='right-side-bar'>
                     <div className="radio d-flex justify-end gap-2 mb-4">
                         <input className='mr-2' type="checkbox" name="" id="" />
