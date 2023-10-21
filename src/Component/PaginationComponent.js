@@ -6,7 +6,7 @@ const itemsPerPage = 9; // Number of items to display per page
 
 const PaginationComponent = () => {
   const PaginationData = useContext(FlightData);
-  const { menu, filteredData, sortOptionStatus } = PaginationData;
+  const { filteredData, sortOptionStatus } = PaginationData;
   const [currentPage, setCurrentPage] = useState(1);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;

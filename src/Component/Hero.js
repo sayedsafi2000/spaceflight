@@ -17,7 +17,7 @@ const Hero = () => {
                     Find out the elaborate features of all the past big spaceflights.
                 </p>
             </div>
-            <header className=' d-block d-md-flex d-lg-flex justify-content-between align-items-center'>
+            <header className=' d-block d-md-flex d-lg-flex justify-content-between align-items-center '>
                 <div>
                     <SearchBox></SearchBox>
                 </div>

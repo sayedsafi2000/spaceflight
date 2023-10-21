@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { FlightData } from '../Context/DataCOntext';
+import React from 'react';
 import BodyItems from './BodyItems';
 
 const BodyElements = () => {
