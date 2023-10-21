@@ -17,7 +17,7 @@ const SortingStatus = () => {
         value={sortOptionStatus}
         onChange={handleSortChange}
       >
-        <option selected>By Launch Status</option>
+        <option >By Launch Status</option>
         <option value='1'>Success</option>
         <option value='2'>Failure</option>
       </select>

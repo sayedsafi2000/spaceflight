@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { FlightData } from "../Context/DataCOntext";
 
 const SortingDate = () => {
-  const { sortOptionDate, setSortOptionDate } = useContext(FlightData);
+  const { sortOptionDate, setSortOptionDate,menu } = useContext(FlightData);
+  console.log(menu)
 
   const handleSortChange = (event) => {
     setSortOptionDate(event.target.value);
@@ -24,7 +25,7 @@ const SortingDate = () => {
       </select>
     </div>
   );
-  
+
 };
 
 export default SortingDate;

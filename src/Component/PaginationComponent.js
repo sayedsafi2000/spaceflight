@@ -6,11 +6,12 @@ const itemsPerPage = 9; // Number of items to display per page
 
 const PaginationComponent = () => {
   const PaginationData = useContext(FlightData);
-  const { menu, filteredData } = PaginationData;
+  const { menu, filteredData,sortOptionStatus } = PaginationData;
   const [currentPage, setCurrentPage] = useState(1);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentData = filteredData.slice(startIndex, endIndex);
+  console.log(sortOptionStatus)
 
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
@@ -33,7 +34,12 @@ const PaginationComponent = () => {
                   <p>{item?.launch_date_local}</p>
                   <h3>{item?.mission_name}</h3>
                   <p class='card-text'>{item?.rocket.rocket_name}</p>
-                  <p>{item?.launch_success}</p>
+                  <div>
+                    <p>Launch Status:</p>
+                    {
+                      item?.launch_success === true ? <small className="bg-success px-2 py-1 rounded-1 text-white fw-bold">Success</small> : <small className="bg-danger px-2 py-1 rounded-1 text-white fw-bold">Failed</small>
+                    }
+                  </div>
                 </div>
               </div>
             </div>

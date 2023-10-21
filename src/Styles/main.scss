@@ -15,6 +15,11 @@ body {
     margin-bottom: 64px;
 }
 
+p {
+    color: #6C757D;
+    font-family: 'Barlow', sans-serif;
+}
+
 h2 {
     color: $h2-heading;
     font-weight: 500;
@@ -57,14 +62,16 @@ img {
     height: 31px;
     margin: 0 auto;
 }
-.pagination_buttons button{
-    color:#0D6EFD;
+
+.pagination_buttons button {
+    color: #0D6EFD;
     font-weight: bold;
     padding: 5px 9px 5px 9px;
     border-radius: 0px;
     border-color: #DEE2E6;
     margin-top: 48px;
 }
+
 @media screen and (max-width:667px) {
     .filter-data {
         width: 100%;
