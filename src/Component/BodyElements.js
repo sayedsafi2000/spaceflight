@@ -4,7 +4,7 @@ import BodyItems from './BodyItems';
 
 const BodyElements = () => {
     return (
-        <div className='container '>
+        <div className='container'>
             <BodyItems></BodyItems>
         </div>
     );

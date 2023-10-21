@@ -9,9 +9,8 @@ const FilterComponent = () => {
   };
 
   return (
-    <div className='radio d-flex justify-end gap-2 mb-4'>
+    <div className='radio d-flex justify-end gap-2 mb-2'>
       <input
-        className='mr-2'
         type='checkbox'
         checked={showOnlyUpcoming}
         onChange={handleCheckboxChange}

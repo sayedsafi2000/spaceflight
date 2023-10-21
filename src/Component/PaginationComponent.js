@@ -6,7 +6,7 @@ const itemsPerPage = 9; // Number of items to display per page
 
 const PaginationComponent = () => {
   const PaginationData = useContext(FlightData);
-  const { menu, filteredData,sortOptionStatus } = PaginationData;
+  const { menu, filteredData, sortOptionStatus } = PaginationData;
   const [currentPage, setCurrentPage] = useState(1);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -31,7 +31,18 @@ const PaginationComponent = () => {
               <div className='card mb-4 pt-4'>
                 <img className='' src={item?.links.mission_patch} alt='...' />
                 <div class='card-body'>
-                  <p>{item?.launch_date_local}</p>
+                  <p>Launch Date:
+                    <span className="date">
+                      {new Date(item?.launch_date_utc).toLocaleDateString(
+                        "en-US",
+                        {
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        }
+                      )}
+                    </span>
+                  </p>
                   <h3>{item?.mission_name}</h3>
                   <p class='card-text'>{item?.rocket.rocket_name}</p>
                   <div>

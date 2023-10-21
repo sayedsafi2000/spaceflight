@@ -17,12 +17,14 @@ const Hero = () => {
                     Find out the elaborate features of all the past big spaceflights.
                 </p>
             </div>
-            <header className='d-md-flex d-block d-lg-flex justify-content-between justify-center'>
-                <SearchBox></SearchBox>
-                <div className='right-side-bar'>
+            <header className=' d-block d-md-flex d-lg-flex justify-content-between align-items-center'>
+                <div>
+                    <SearchBox></SearchBox>
+                </div>
+                <div className='right-side-bar justify-content-end'>
                     <FilterComponent />
-                    <div className='d-block d-lg-flex gap-3'>
-                        <SortingDate></SortingDate>
+                    <div className='d-block d-md-flex d-lg-flex gap-3'>
+                        <SortingDate />
                         <SortingStatus />
                     </div>
                 </div>

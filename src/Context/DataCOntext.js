@@ -5,7 +5,6 @@ import useMenu from "../Hooks/useMenu";
 export const FlightData = createContext();
 const DataCOntext = ({ children }) => {
   const [menu, loading] = useMenu({});
-
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOptionDate, setSortOptionDate] = useState(null);
   const [sortOptionStatus, setSortOptionStatus] = useState(null);
