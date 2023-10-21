@@ -1,71 +1,34 @@
-# Getting Started with Create React App
+1. First off all need to install node_modules.For install we have to run " npm i/install ".
+2. If we want to run in localhost we should type npm start on comand promot.
+3. I have already deployed this website on netlify. Here is the live link  https://rocket-flight.netlify.app/
+4. All types of functionality used in this website which was recomanded task file.
+5.Sorting based on Last week,Last month and last year are also included but there is no obejct on api that release in this year.Last release rocket launch in 2020,that's why after we click on those button not showing any data.But I have complitly included all functionality of those buttons data.If the api update and any of launch in this year this button will show data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+................Recomandation............. 
+1. Create a React project - Done✅
+2. Use Context, Hooks, Routing(React router dom v6), and Functional Component with no props drilling. - Done✅  
+3. Use the following API source https://api.spacexdata.com/v3/launches - Done✅
+4. Build the user interface by following the design of the given figma link
+        i. https://www.figma.com/file/Djk419cbqMW5oPS3tUDzn3/Assignment?node-id=0
+        %3A1
+        ii. Use any external UI framework like Bootstrap 5
+        iii. Custome the project using SCSS. You can use CSS variables to change
+        typography and colors as well.
+        iv. Make the UI responsive as described in Figma file
+        v. Avoid writing extra CSS classes. - Done✅
+5. Search should be By Rocket Name. - Done✅
+6. Filters data by
+        1. By Launch Date
+        i. Last Week
+        ii. Last Month
+        iii. Last Year
+        2. By Launch Status ( Failure, Success )
+        3. All upcoming
+        4. Add pagination which shows per page 9 items. If the user reloads the page then
+        show the list according to the page number. - Done✅
+7. Don’t use any third-party packages for searching and filtering. - Done✅
 
-## Available Scripts
+Live Preview : https://rocket-flight.netlify.app/
+Github : https://github.com/sayedsafi2000/spaceflight
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# spaceflight" 
+Thank You..
